@@ -1,12 +1,9 @@
 @media(min-width:320px) and (max-width:767px){
 
-body{
-    overflow-x: hidden;
-}
 header{
     padding: 0px 8px;
 }
-.navbar{
+#menu{
     display: none;
 }
 .nav-links-icon{
@@ -22,11 +19,9 @@ header{
 .main-content{
         padding: 170px 60px;
 }
-
 .main-content h1{
         font-size: 65px;
 }
-
 #cafe-welcome{
         font-size: 26px;
 }
@@ -49,23 +44,22 @@ header{
     width: 300px;
     padding: 23px;
     margin-bottom: 15px;
-    /* margin-left: 25px; */
-    }
+
+}
 .lunch {
     width: 300px;
     padding: 23px;
     margin-bottom: 15px;
-    /* margin-left: 25px; */
-    }
+
+}
 .dinner {
     width: 300px;
     padding: 23px;
     margin-bottom: 15px;
-    /* margin-left: 25px; */
+
 }
 
 .about-cafe {
-    margin: 2px 1px;
     padding: 0px;
     padding: 22px 25px;
     display: block!important;
@@ -89,13 +83,13 @@ header{
 }
 
 .our-description {
-     margin: 0px;
+    margin: 3px;
     padding: 20px 50px;
 }
 .about-us p {
     color: #444;
     line-height: 25px;
-    width: 340px;
+    width: 343px;
 }
 
 .reservation-contact {
@@ -181,6 +175,7 @@ header{
     padding: 20px 10px;
 }
 .details div{
+    padding: 0px;
     width: 335px;
     height: 250px;
 }
@@ -202,7 +197,38 @@ section{
     margin: 0px 0px;
 }
 
-.nav-links.active{
-    display: block;
+/* #menu.show{
+    display: flex;
+    flex-direction: column;
+} */
+.menu-container {
+  /* position: relative; */
+  width: 200px;
 }
+
+#menu-toggle {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;  
+}
+
+#menu li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+#menu li a:hover {
+  background-color: #555;
+}
+/* Show menu when not hidden */
+#menu.active {
+  display: block;
+}
+
 }

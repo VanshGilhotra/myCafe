@@ -37,8 +37,8 @@
             <nav class="nav">
                 <h2><img src="images/Bclogo.png"></h2>
 
-                <div class="navlinks">
-                    <ul class="navbar">
+                <div class="navlinks menu-container" >
+                    <ul class="navbar" id="menu">
                         <li><a href="index.html">Home</a></li>
                         <li>
                         <a href="#">Foods</a>
@@ -54,7 +54,7 @@
                     </ul>                    
                 </div>
                 <div class="nav-links-icon">
-                    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+                    <button onclick="toggleMenu()" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
                 </div>
 
             </nav>
@@ -175,9 +175,13 @@
 <script src="js/lightbox-plus-jquery.min.js"></script>
 <script>
     function toggleMenu() {
-        const nav = document.getElementById('navlinks');
-        nav.classList.toggle("active");
-    }
+        const toggleButton = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+
+        toggleButton.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        });
+    }   
 </script>
 
 </html>

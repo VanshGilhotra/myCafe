@@ -1,7 +1,8 @@
 @media(min-width:320px) and (max-width:767px){
 
 header{
-    padding: 0px 8px;
+    /* padding: 0px 8px; */
+    display: none;
 }
 #menu{
     display: none;
@@ -34,6 +35,10 @@ header{
     background-color: #f8f8f8;
     text-align: center;
 }
+.quick-detail div{
+    width: 250px;
+    margin: 0px 20px;
+}
 
 .food-content {
     display: block;
@@ -41,21 +46,24 @@ header{
 }
 
 .breakfast {
-    width: 300px;
+    width: 250px;
     padding: 23px;
     margin-bottom: 15px;
+    margin-right: 0px;
 
 }
 .lunch {
-    width: 300px;
+    width: 250px;
     padding: 23px;
     margin-bottom: 15px;
+    margin-right: 0px;
 
 }
 .dinner {
-    width: 300px;
+    width: 250px;
     padding: 23px;
     margin-bottom: 15px;
+    margin-right: 0px;
 
 }
 
@@ -66,7 +74,7 @@ header{
 }
 .about-us h1{
     font-size: 27px;
-    width: 350px;
+    width: 250px;
 }
 .about-img img {
     width: 190%;
@@ -89,12 +97,12 @@ header{
 .about-us p {
     color: #444;
     line-height: 25px;
-    width: 343px;
+    width: 250px;
 }
 
 .reservation-contact {
     display: block;
-    padding: 10px 18px;
+    padding: 10px 15px;
     width: 90%;
 }
 .left-img img {
@@ -123,7 +131,7 @@ header{
     width: 80%;
     background-color: rgba(128, 128, 128, 0.151);
     padding: 20px;
-    margin: 2px 25px;
+    margin: 2px 12px;
     height: 617px;
 }
 .social-links li {
@@ -134,7 +142,7 @@ header{
 }
 .form {
     width: 85%;
-    padding: 40px 27px;
+    padding: 40px 22px;
     font-family: "poppins";
     margin-top: 2px;
 }
